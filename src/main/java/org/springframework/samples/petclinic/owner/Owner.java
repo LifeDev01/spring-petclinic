@@ -57,7 +57,7 @@ public class Owner extends Person {
 
 	@Column(name = "telephone")
 	@NotBlank
-	@Pattern(regexp = "\\d{10}", message = "{telephone.invalid}")
+	@Pattern(regexp = "\\d{10}", message = "Неправильный номер{telephone.invalid}")
 	private String telephone;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
